@@ -1,0 +1,27 @@
+.tcon-remove {
+  height: $tcon-size;
+  position: relative;
+  transform: scale(.75);
+  width: $tcon-size;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 25%;
+    width: 85%;
+    position: absolute;
+    top: 37%;
+    left: 8%;
+    transition: $tcon-transition;
+    background: $tcon-remove-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

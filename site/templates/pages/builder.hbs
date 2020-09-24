@@ -1,0 +1,233 @@
+---
+basename: builder
+title: Transformicons The Animated Icon Builder
+description: Animated symbols and buttons packaged for Sass and CSS. We also provide a builder that gives developers the ability to select their preferred Transformicons and output for finer control.
+layout: default
+path: /builder.html
+---
+<h2>Builder</h2>
+<form action="#" id="tcon-builder" role="form">
+  <div class="tcons-build__options">
+    <fieldset>
+      <h3 class="tcon-builder__title">Menu</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> menu-xbutterfly}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-menu--butterfly" type="checkbox" data-transform="menu=xbutterfly" aria-checked="false" role="checkbox" checked>
+            <label for="tcon-menu--butterfly">Menu to X (Butterfly Style)</label>
+          </div>
+        </li>
+
+        <li>
+          {{> menu-minus}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-menu--minus" type="checkbox" data-transform="menu=minus" aria-checked="false" role="checkbox">
+            <label for="tcon-menu--minus">Menu to Minus</label>
+          </div>
+        </li>
+
+        <li>
+          {{> menu-xcross}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-menu--xcross" type="checkbox" data-transform="menu=xcross" aria-checked="false" role="checkbox">
+            <label for="tcon-menu--xcross">Menu to X (Crossover Style)</label>
+          </div>
+        </li>
+
+        <li>
+          {{> menu-arrowup}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-menu--arrowup" type="checkbox" data-transform="menu=arrowup" aria-checked="false" role="checkbox">
+            <label for="tcon-menu--arrowup">Menu to Upwards Arrow</label>
+          </div>
+        </li>
+
+        <li>
+          {{> menu-arrow360}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-menu--arrow360" type="checkbox" data-transform="menu=arrow360" aria-checked="false" role="checkbox">
+            <label for="tcon-menu--arrow360">Menu Arrow Spins 360deg</label>
+          </div>
+        </li>
+
+        <li>
+          {{> menu-arrowleft}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-menu--arrowleft" type="checkbox" data-transform="menu=arrowleft" aria-checked="false" role="checkbox">
+            <label for="tcon-menu--arrowleft">Menu Arrow Points Left</label>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="tcon-builder__title">Grid</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> grid-collapse}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-grid--collapsex" type="checkbox" data-transform="grid=collapse" aria-checked="false" role="checkbox">
+            <label for="tcon-grid--collapsex">Collapse to X</label>
+          </div>
+        </li>
+        <li>
+          {{> grid-rearrange}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-grid--rearrangex" type="checkbox" data-transform="grid=rearrange" aria-checked="false" role="checkbox">
+            <label for="tcon-grid--rearrangex">Rearrange to X</label>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="tcon-builder__title">Add/Rm</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> addrm-plus-check}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--pluscheck" type="checkbox" data-transform="addrm=plus-check" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--pluscheck">Plus to Check</label>
+          </div>
+        </li>
+
+        <li>
+          {{> addrm-plus-minusrotate}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--plusminusrotate" type="checkbox" data-transform="addrm=plus-minusrotate" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--plusminusrotate">Plus to Minus <small>(Rotate Style)</small></label>
+          </div>
+        </li>
+
+        <li>
+          {{> addrm-remove-check}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--removecheck" type="checkbox" data-transform="addrm=remove-check" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--removecheck">Remove to Check</label>
+          </div>
+        </li>
+
+        <li>
+          {{> addrm-remove-chevron-left}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--remove-chevron-left" type="checkbox" data-transform="addrm=remove-chevron-left" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--remove-chevron-left">Remove to chevron left</label>
+          </div>
+        </li>
+
+        <li>
+          {{> addrm-remove-chevron-right}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--remove-chevron-right" type="checkbox" data-transform="addrm=remove-chevron-right" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--remove-chevron-right">Remove to chevron right</label>
+          </div>
+        </li>
+
+        <li>
+          {{> addrm-remove-chevron-down}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--remove-chevron-down" type="checkbox" data-transform="addrm=remove-chevron-down" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--remove-chevron-down">Remove to chevron down</label>
+          </div>
+        </li>
+
+        <li>
+          {{> addrm-remove-chevron-up}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-addrm--remove-chevron-up" type="checkbox" data-transform="addrm=remove-chevron-up" aria-checked="false" role="checkbox">
+            <label for="tcon-addrm--remove-chevron-up">Remove to chevron up</label>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="tcon-builder__title">Mail</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> mail-envelope}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-mail--env" type="checkbox" data-transform="mail=envelope" aria-checked="false" role="checkbox">
+            <label for="tcon-mail--env">Envelope</label>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="tcon-builder__title">Scroll Indicators</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> indicator-svgchevron}}
+
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-indicator--svgchevron" type="checkbox" data-transform="indicator=svgchevron" aria-checked="false" role="checkbox">
+            <label for="tcon-indicator--svgchevron">SVG Chevron</label>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="tcon-builder__title">Forms</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> search-xcross}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-search--xcross" type="checkbox" data-transform="search=xcross" aria-checked="false" role="checkbox">
+            <label for="tcon-search--xcross">Search to X</label>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="tcon-builder__title">Loaders</h3>
+      <ul class="tcons-items list-reset">
+        <li>
+          {{> loader-spinner360}}
+          <div class="tcon-checkbox">
+            <input class="tcon-builder-input" id="tcon-loader--spinner360" type="checkbox" data-transform="loader=spinner360" aria-checked="false" role="checkbox">
+            <label for="tcon-loader--spinner360">Spinning 360 Loader</label>
+          </div>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Output</h2></legend>
+      <h3 class="tcon-builder__title">Styles</h3>
+
+      <label for="tcon-stylesheet--css">
+        <input type="radio" name="tcon_stylesheet" id="tcon-stylesheet--css" value="css" checked> CSS
+      </label>
+
+      <label for="tcon-stylesheet--sass">
+        <input type="radio" name="tcon_stylesheet" id="tcon-stylesheet--sass" value="scss"> Sass
+      </label>
+
+      <h3 class="tcon-builder__title">JavaScript</h3>
+      <label for="tcon-stylesheet--jsmin">
+        <input type="radio" name="tcon_javascript" id="tcon-stylesheet--jsmin" value="minified=true" checked> Minified
+      </label>
+
+      <label for="tcon-script--jsunmin">
+        <input type="radio" name="tcon_javascript" id="tcon-script--jsunmin" value="minified=false"> Unminified
+      </label>
+    </fieldset>
+  </div>
+
+  <p class="btn_perspective"><button class="btn btn-3d btn-3db tcon-btn" type="submit">Build</button></p>
+</form>
+
+<div class="tcon-src">
+  <div class="tcon-src__html">
+    <h3>Markup</h3>
+    <div>
+      <pre><code class="language-html"><textarea></textarea></code></pre>
+    </div>
+  </div>
+
+  <div class="tcon-src__styles">
+    <h3>Styles</h3>
+    <div>
+      <pre><code class="language-scss"><textarea></textarea></code></pre>
+    </div>
+  </div>
+
+  <div class="tcon-src__js">
+    <h3>JavaScript</h3>
+    <div>
+      <pre><code class="language-javascript"><textarea></textarea></code></pre>
+    </div>
+  </div>
+</div>

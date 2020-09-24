@@ -1,0 +1,167 @@
+* {
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+thead {
+  background: rgba(95, 98, 121, 0.19);
+  border: 1px solid #E4E4E4;
+  border-left: none;
+  border-right: none;
+}
+
+table {
+  background: rgba(30, 28, 61, 0.03);
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #E4E4E4;
+  border-top: none;
+}
+
+th,td {
+  padding: 10px;
+}
+
+tr {
+  vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+  background: white;
+}
+
+legend {
+  display: block;
+  padding: 5px 10px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  min-height: 150px;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  background: #312B56;
+  border: none;
+  border-radius: 2px;
+  padding: 12px;
+  font-family: monospace;
+  font-size: 15px;
+  color: #48DAE6;
+}
+
+input[value="Build"] {
+  appearance: none;
+  border: none;
+  display: block;
+  margin: 20px auto;
+  padding: 1em;
+  width: 100%;
+  font-size: medium;
+  background: Red;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 487px;
+  padding: 10px 0;
+  width: 100%;
+  background: #1E1C3D;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  a {
+    border: 2px solid #FFFEFE;
+    border-radius: 2px;
+    transition: .2s border ease-in-out, .2s background ease-in-out, .2s color ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto 10px;
+    padding: 20px;
+    background: transparent;
+    color: #FFFEFE;
+
+    &.active,
+    &:hover {
+      border: 2px solid #FFFEFE;
+      background: #FFFEFE;
+      color: black;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+main {
+  display: block;
+  max-width: 786px;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+}
+
+footer {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: #AD0A00;
+}
+
+footer a {
+  color: white;
+}
